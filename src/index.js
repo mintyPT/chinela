@@ -18,15 +18,22 @@ const StyledInput = styled.input`
   border: none;
   border-bottom: 2px solid #ccc;
   margin-bottom: 2px;
+  margin: 0;
   padding: 4px 0;
   font-size: 24px;
+  display: inline-block;
+  &:focus {
+    outline: none;
+  }
 `;
 
 const StyledShow = styled.span`
   font-size: 24px;
+  margin: 0;
   padding: 4px 0;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid red;
   margin-bottom: 2px;
+  display: inline-block;
 `;
 
 class Input extends React.Component {
@@ -105,7 +112,10 @@ class Pencil extends React.Component {
           <button>i</button>
         </div>
         {list}
-        <hr />
+        <br />
+        <br />
+        <br />
+        <br />
         <pre>{JSON.stringify(this.state.items, null, 4)}</pre>
       </div>
     );
