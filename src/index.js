@@ -101,7 +101,7 @@ class Pencil extends React.Component {
           onClickOutside={() => this.clickedOutside(item.id)}
           onClick={() => this.clickedInside(item.id)}
         >
-          - {item.focused ? inp : show}
+          ‣ {item.focused ? inp : show}
         </OutsideAlerter>
       );
     });
@@ -110,6 +110,12 @@ class Pencil extends React.Component {
         <div>
           <button>b</button>
           <button>i</button>
+          {" ___ "}
+          <button>yellow</button>
+          <button>pink</button>
+          {" ___ "}
+          <button>&lt;</button>
+          <button>&gt;</button>
         </div>
         {list}
         <br />
